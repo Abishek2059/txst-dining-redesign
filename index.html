@@ -10,7 +10,7 @@
 
     <title>Texas State Dining Services</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
@@ -18,36 +18,32 @@
 <a class="skip-link" href="#main-content">Skip to main content</a>
 
 <header class="site-header">
-    <div class="container header-content">
+    <div class="container header-inner">
 
-        <a class="brand" href="index.html">
-            <div class="logo-placeholder">TXST</div>
+        <a class="brand" href="./index.html">
+            <div class="logo">TXST</div>
 
             <div>
-                <p class="university-name">Texas State University</p>
+                <p>Texas State University</p>
                 <h1>Dining Services</h1>
             </div>
         </a>
 
-        <nav class="main-navigation" aria-label="Main navigation">
+        <nav class="main-nav" aria-label="Main navigation">
             <ul>
                 <li><a href="#locations">Locations</a></li>
                 <li><a href="#menus">Menus</a></li>
                 <li><a href="#meal-plans">Meal Plans</a></li>
                 <li><a href="#catering">Catering</a></li>
-                <li><a href="#hospitality">Hospitality</a></li>
-                <li><a href="#about">About Us</a></li>
+                <li><a href="#resources">Resources</a></li>
             </ul>
         </nav>
 
         <form class="search-form" role="search">
-            <label class="sr-only" for="site-search">
-                Search the Dining Services website
-            </label>
+            <label class="sr-only" for="search">Search Dining Services</label>
 
             <input
-                id="site-search"
-                name="search"
+                id="search"
                 type="search"
                 placeholder="Search..."
             >
@@ -60,11 +56,10 @@
 
 <main id="main-content">
 
-    <!-- Hero section -->
     <section class="hero">
         <div class="container hero-grid">
 
-            <div class="hero-content">
+            <div class="hero-copy">
                 <p class="eyebrow">Texas State Dining Services</p>
 
                 <h2>
@@ -72,17 +67,17 @@
                     Eat Well. Bobcat On.
                 </h2>
 
-                <p>
+                <p class="hero-description">
                     Find dining locations, daily menus, operating hours,
                     and meal-plan information in one place.
                 </p>
 
                 <div class="button-row">
-                    <a class="button primary-button" href="#menus">
+                    <a class="button primary" href="#menus">
                         View Today’s Menu
                     </a>
 
-                    <a class="button secondary-button" href="#meal-plans">
+                    <a class="button secondary" href="#meal-plans">
                         View Meal Plans
                     </a>
                 </div>
@@ -90,19 +85,18 @@
 
             <div class="hero-image">
                 <img
-                    src="images/hero.jpg"
-                    alt="Students eating together at a Texas State University dining location"
+                    src="./images/hero.jpg"
+                    alt="Students eating together at a campus dining location"
                 >
             </div>
 
         </div>
     </section>
 
-    <!-- Quick access -->
     <section class="section" id="menus">
         <div class="container">
 
-            <div class="section-heading">
+            <div class="section-header">
                 <div>
                     <p class="eyebrow">Quick Access</p>
                     <h2>What’s Happening Today?</h2>
@@ -111,116 +105,92 @@
                 <a href="#locations">View all locations →</a>
             </div>
 
-            <div class="card-grid four-columns">
+            <div class="quick-grid">
 
-                <article class="info-card">
-                    <div class="icon-placeholder" aria-hidden="true">◷</div>
-
+                <article class="quick-card">
+                    <div class="card-icon" aria-hidden="true">◷</div>
                     <h3>Hours</h3>
-
-                    <p>
-                        View today’s hours for every campus dining location.
-                    </p>
-
+                    <p>View today’s hours for every campus dining location.</p>
                     <a href="#">View all hours →</a>
                 </article>
 
-                <article class="info-card">
-                    <div class="icon-placeholder open-icon" aria-hidden="true">
-                        OPEN
-                    </div>
-
+                <article class="quick-card">
+                    <div class="card-icon small-icon" aria-hidden="true">OPEN</div>
                     <h3>What’s Open</h3>
-
-                    <p>
-                        See which dining halls, cafés, and markets are open now.
-                    </p>
-
+                    <p>See which dining halls, cafés, and markets are open now.</p>
                     <a href="#">See open locations →</a>
                 </article>
 
-                <article class="info-card">
-                    <div class="icon-placeholder" aria-hidden="true">🍴</div>
-
+                <article class="quick-card">
+                    <div class="card-icon" aria-hidden="true">🍴</div>
                     <h3>Today’s Menus</h3>
-
-                    <p>
-                        Browse current food options at each dining location.
-                    </p>
-
+                    <p>Browse current food options at each dining location.</p>
                     <a href="#">View menus →</a>
                 </article>
 
-                <article class="info-card">
-                    <div class="icon-placeholder" aria-hidden="true">▣</div>
-
+                <article class="quick-card">
+                    <div class="card-icon" aria-hidden="true">▣</div>
                     <h3>Meal Plans</h3>
-
-                    <p>
-                        Compare student meal plans and choose the best option.
-                    </p>
-
+                    <p>Compare student meal plans and choose the best option.</p>
                     <a href="#meal-plans">Explore plans →</a>
                 </article>
 
             </div>
+
         </div>
     </section>
 
-    <!-- Category navigation -->
     <section class="category-section" id="locations">
         <div class="container category-grid">
 
-            <a class="category-link" href="#">
-                <span class="category-icon" aria-hidden="true">●</span>
-                <span>Dining Locations</span>
+            <a class="category-card" href="#">
+                <span aria-hidden="true">●</span>
+                Dining Locations
             </a>
 
-            <a class="category-link" href="#menus">
-                <span class="category-icon" aria-hidden="true">▤</span>
-                <span>Menus</span>
+            <a class="category-card" href="#menus">
+                <span aria-hidden="true">▤</span>
+                Menus
             </a>
 
-            <a class="category-link" href="#meal-plans">
-                <span class="category-icon" aria-hidden="true">▣</span>
-                <span>Meal Plans</span>
+            <a class="category-card" href="#meal-plans">
+                <span aria-hidden="true">▣</span>
+                Meal Plans
             </a>
 
-            <a class="category-link" href="#">
-                <span class="category-icon" aria-hidden="true">●●●</span>
-                <span>Parents &amp; Families</span>
+            <a class="category-card" href="#">
+                <span aria-hidden="true">●●●</span>
+                Parents &amp; Families
             </a>
 
-            <a class="category-link" href="#catering">
-                <span class="category-icon" aria-hidden="true">⌒</span>
-                <span>Catering</span>
+            <a class="category-card" href="#catering">
+                <span aria-hidden="true">⌒</span>
+                Catering
             </a>
 
-            <a class="category-link" href="#hospitality">
-                <span class="category-icon" aria-hidden="true">?</span>
-                <span>Hospitality</span>
+            <a class="category-card" href="#resources">
+                <span aria-hidden="true">?</span>
+                Resources
             </a>
 
         </div>
     </section>
 
-    <!-- Campus map -->
     <section class="section">
         <div class="container">
 
             <div class="map-banner">
                 <div>
                     <p class="eyebrow">Campus Map</p>
-
                     <h2>Find Dining Around Campus</h2>
 
                     <p>
-                        Use an interactive map to find dining locations near
-                        your residence hall, classroom, or campus destination.
+                        Find dining locations near your residence hall,
+                        classroom, or campus destination.
                     </p>
                 </div>
 
-                <a class="button primary-button" href="#">
+                <a class="button primary" href="#">
                     View Campus Map
                 </a>
             </div>
@@ -228,30 +198,30 @@
         </div>
     </section>
 
-    <!-- Featured information -->
-    <section class="section muted-section">
+    <section class="section featured-section">
         <div class="container">
 
-            <div class="section-heading">
+            <div class="section-header">
                 <div>
                     <p class="eyebrow">Featured Information</p>
                     <h2>Featured at Texas State</h2>
                 </div>
             </div>
 
-            <div class="card-grid three-columns">
+            <div class="featured-grid">
 
                 <article class="feature-card">
-                    <div class="image-placeholder" aria-hidden="true">
-                        <span>Dining Hours Image</span>
-                    </div>
+                    <img
+                        src="./images/dining-hours.jpg"
+                        alt="Texas State campus dining location"
+                    >
 
                     <div class="feature-content">
                         <h3>Summer Dining Hours</h3>
 
                         <p>
-                            View updated hours for dining locations during
-                            the summer semester.
+                            View updated operating hours for campus dining
+                            locations during the summer semester.
                         </p>
 
                         <a href="#">Learn more →</a>
@@ -259,16 +229,17 @@
                 </article>
 
                 <article class="feature-card">
-                    <div class="image-placeholder" aria-hidden="true">
-                        <span>Menu Image</span>
-                    </div>
+                    <img
+                        src="./images/seasonal-menu.jpg"
+                        alt="Meal available at a campus dining location"
+                    >
 
                     <div class="feature-content">
                         <h3>New and Seasonal Menu Items</h3>
 
                         <p>
-                            Explore new meals, seasonal options, and featured
-                            items available across campus.
+                            Explore new meals, seasonal choices, and featured
+                            food options available across campus.
                         </p>
 
                         <a href="#">Explore now →</a>
@@ -276,16 +247,17 @@
                 </article>
 
                 <article class="feature-card" id="catering">
-                    <div class="image-placeholder" aria-hidden="true">
-                        <span>Catering Image</span>
-                    </div>
+                    <img
+                        src="./images/catering.jpg"
+                        alt="Catering food prepared for a university event"
+                    >
 
                     <div class="feature-content">
                         <h3>Catering for Any Occasion</h3>
 
                         <p>
                             Learn about catering options for meetings,
-                            student events, and university programs.
+                            student events, and university programmes.
                         </p>
 
                         <a href="#">Request catering →</a>
@@ -297,51 +269,48 @@
         </div>
     </section>
 
-    <!-- Promotions -->
-    <section class="section promotions-section" id="meal-plans">
+    <section class="section" id="meal-plans">
         <div class="container">
 
-            <div class="section-heading">
+            <div class="section-header">
                 <div>
-                    <p class="eyebrow">Promotional Content</p>
-                    <h2>Promotions and Special Offers</h2>
+                    <p class="eyebrow">Meal-Plan Options</p>
+                    <h2>Plans for the Texas State Community</h2>
                 </div>
-
-                <a href="#">View all promotions →</a>
             </div>
 
             <div class="promotion-grid">
 
                 <article class="promotion-card">
-                    <div class="promotion-icon" aria-hidden="true">S</div>
+                    <div class="promotion-letter" aria-hidden="true">S</div>
 
                     <div>
                         <h3>Meal Plans for Students</h3>
 
                         <p>
-                            Compare meal plans designed for students living
-                            on campus, commuting, or purchasing meals occasionally.
+                            Compare plans for students living on campus,
+                            commuting, or purchasing meals occasionally.
                         </p>
 
-                        <a class="button primary-button" href="#">
-                            Explore Student Meal Plans
+                        <a class="button primary" href="#">
+                            Explore Student Plans
                         </a>
                     </div>
                 </article>
 
                 <article class="promotion-card">
-                    <div class="promotion-icon" aria-hidden="true">E</div>
+                    <div class="promotion-letter" aria-hidden="true">E</div>
 
                     <div>
                         <h3>Meal Plans for Employees</h3>
 
                         <p>
-                            Review convenient dining-plan options available
-                            to Texas State faculty and staff.
+                            Review convenient dining options available to
+                            Texas State faculty and staff.
                         </p>
 
-                        <a class="button primary-button" href="#">
-                            Explore Employee Meal Plans
+                        <a class="button primary" href="#">
+                            Explore Employee Plans
                         </a>
                     </div>
                 </article>
@@ -353,7 +322,8 @@
 
 </main>
 
-<footer class="site-footer" id="about">
+<footer class="site-footer" id="resources">
+
     <div class="container footer-grid">
 
         <div>
@@ -372,7 +342,7 @@
             </ul>
         </div>
 
-        <div id="hospitality">
+        <div>
             <h3>Resources</h3>
 
             <ul>
@@ -413,6 +383,7 @@
             <a href="#">Terms of Use</a>
         </div>
     </div>
+
 </footer>
 
 </body>
